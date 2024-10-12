@@ -1,5 +1,4 @@
 ﻿#Requires AutoHotkey v2.0
-#SingleInstance Force
 
 ; If capslock is active
 #HotIf GetKeyState("CapsLock", "T")
@@ -12,5 +11,5 @@ sc027:: Send "[" ; Send [ instead of ö
 sc028:: Send "]" ; Send ] instead of ä
 +sc027:: Send "{{}" ; Send { instead of shift+ö
 +sc028:: Send "{}}" ; Send } instead of shift+ä
-sc00C:: Send "|" ; Send | instead of ß
+sc00C:: Send "\" ; Send \ instead of ß
 sc01A:: Send ";" ; Send ; instead of ü
